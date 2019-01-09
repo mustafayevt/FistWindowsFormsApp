@@ -16,5 +16,11 @@ namespace WindowsFormsApp_first
         {
             InitializeComponent();
         }
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            button1.Left = random.Next(0, Width - button1.Width);
+            button1.Top = random.Next(0, Height - button1.Height);
+        }
     }
 }
